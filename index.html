@@ -257,23 +257,24 @@
                 </div>
                 <div class="column right">
                     <div class="text">Me mande uma mensagem</div>
-                    <form class="contact-form" action="#" method="POST">
+                    <form class="contact-form" action="mailto:leuuzfernandes@gmail.com" method="POST" enctype="text/plain">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" class="fullname" placeholder="Nome">
+                                <input name="nome" type="text" class="labelInput" placeholder="Nome" required>
                             </div>
                             <div class="field email">
-                                <input type="text" class="email-input" placeholder="Email">
+                                <input name="email" type="text" class="email-input" placeholder="Email">
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" class="subject" placeholder="Assunto">
+                            <input name="Assunto"type="text" class="subject" placeholder="Assunto">
                         </div>
                         <div class="field textarea">
-                            <textarea class="message" cols="30" rows="10" placeholder="Mensagem.."></textarea>
+                            <textarea class="message" name="mensagem" cols="30" rows="10" placeholder="Mensagem.."></textarea>
                         </div>
                         <div class="button-area">
-                            <button class="send-msg" type="submit" name="send">Enviar mensagem</button>
+                            <button type="submit">Enviar mensagem</button><hr><hr><hr><hr><hr><hr><hr><hr>
+                            <button type="reset" value="Limpar">Limpar</button>
                         </div>
                     </form>
                 </div>
